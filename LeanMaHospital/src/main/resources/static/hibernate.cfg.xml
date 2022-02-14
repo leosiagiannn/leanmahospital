@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- For details, visit: https://docs.jboss.org/hibernate/orm/3.3/reference/en/html/session-configuration.html -->
+<hibernate-configuration>
+	
+	<session-factory>
+		
+		<!-- Properties JDBC API -->
+		<property name="hibernate.connection.driver_class">com.mysql.cj.jdbc.Driver</property>
+		<property name="hibernate.connection.url">jdbc:mysql://127.0.0.1:3306/students</property>
+		<property name="hibernate.connection.username">root</property>
+		<property name="hibernate.connection.password">Hasudungan420!</property>
+		<property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+        
+		<!-- Mapping -->
+		<mapping resource="tmahasiswa.hbm.xml" />
+		<mapping resource="tmatakuliah.hbm.xml" />
+		<mapping resource="tmhsmatkul.hbm.xml" />
+		
+	</session-factory>
+	
+</hibernate-configuration>

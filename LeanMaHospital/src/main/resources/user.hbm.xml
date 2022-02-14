@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<hibernate-mapping>
+	<class name="LeanMa.Hospital.POJOS.User" table="User">
+		<id name="id" column="id" type="int">
+			<generator class="increment"/>
+		</id>
+		<property name="username">
+			<column name="username"/>
+		</property>
+		<property name="password">
+			<column name="password"/>
+		</property>
+	</class>
+</hibernate-mapping>

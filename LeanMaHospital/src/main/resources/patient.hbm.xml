@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<hibernate-mapping>
+	<class name="LeanMa.Hospital.POJOS.Patient" table="Patient">
+		<id name="id" column="id" type="int">
+			<generator class="increment"/>
+		</id>
+		<property name="nik">
+			<column name="nik"/>
+		</property>
+		<property name="nama">
+			<column name="nama"/>
+		</property>
+		<property name="umur">
+			<column name="umur"/>
+		</property>
+		<property name="gender">
+			<column name="gender"/>
+		</property>
+		<property name="penyakit">
+			<column name="penyakit"/>
+		</property>
+	</class>
+</hibernate-mapping>
